@@ -37,8 +37,8 @@
                         <input type="file" class="form-control" id="ch" name="chemin">
                       </div>
                      <div class="my-3">
-                        <label for="dp" class="form-label text-capitalize">Departement :</label>
-                        <select name="departement_id" id="dp" class="form-select">
+                        <label for="depart" class="form-label text-capitalize">Departement :</label>
+                        <select name="departement_id" id="depart" class="form-select">
                             @foreach ($depart as $d)
                              <option value="{{$d->id}}">{{$d->nom}}</option>   
                             @endforeach

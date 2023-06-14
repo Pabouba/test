@@ -41,7 +41,7 @@
         </form>
         @else
           <a href="{{route('login')}}">Connexion</a>  
-        @endif
+        
         @endauth
       </div>
     </div>

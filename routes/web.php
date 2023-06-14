@@ -1,6 +1,11 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\DepartementController;
+use App\Http\Controllers\FilieresController;
+use App\Http\Controllers\MedcinController;
+use App\Http\Controllers\PersonnelController;
+use App\Http\Controllers\Sage_femmeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +34,9 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+Route::resource('student', StudentController::class);
+Route::resource('departement', DepartementController::class);
+Route::resource('personnel', PersonnelController::class);
+Route::resource('filiere', FilieresController::class);
+Route::resource('medcin', MedcinController::class);
+Route::resource('sage-femme', Sage_femmeController::class);
